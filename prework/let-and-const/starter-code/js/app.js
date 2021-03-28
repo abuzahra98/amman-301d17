@@ -37,7 +37,8 @@ function displayPics(){
   }
 
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  //  using var we can access the variable from the outside of it's scope, however using let we can't access the variable because it's only defined in it's scope so it appears as undefined.
+  // I shifted the console.log inside the "let" scope to prevent this error.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
