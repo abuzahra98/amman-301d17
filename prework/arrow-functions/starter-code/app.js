@@ -199,8 +199,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//undefined
+// Current object, Student {name: "Joe", age: "Schmoe", hometown: 100}
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//undefined
+// The window, Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
 // 3. Explain why "this" is different when an arrow function is used.
-//function create his own context, so this refers to object itself. but The arrow function does’t define its own execution context, so this refers to window object .
+// because the arrow function refers to `this` as  the global window object not the enclosing scope, unlike the regular function declaration that refers to the current object or the enclosing scope.
